@@ -9,10 +9,11 @@ function HomePage() {
       <div className="main">Index Page</div>
       <div
         className={css`
-          padding: 32px;
-          background-color: hotpink;
+          padding: 27px;
+          background-color: pink;
           font-size: 24px;
           border-radius: 4px;
+          margin-top: 5px;
           &:hover {
             color: ${color};
           }
