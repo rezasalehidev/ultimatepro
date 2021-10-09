@@ -1,8 +1,14 @@
 import React from 'react'
+// import { useTheme } from '@emotion/react'
 import Input from '../Input'
 
-const index = ({ placeholder }) => (
-  <Input type="email" placeholder={placeholder} />
-)
+function index({ placeholder }) {
+  return (
+    <Input
+      type="email"
+      placeholder={placeholder}
+    />
+  )
+}
 
 export default index

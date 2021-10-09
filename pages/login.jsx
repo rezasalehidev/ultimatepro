@@ -3,11 +3,11 @@ import { css } from '@emotion/css'
 import Head from 'next/head'
 import LayoutAuth from '../containers/LayoutAuth/LayoutAuth'
 import { Button, InputEmail, InputPassword } from '../components/index'
+import Formcontainer from '../components/Formcontainer/Formcontainer'
 
 function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('submit')
   }
 
   return (
@@ -23,8 +23,12 @@ function Login() {
           flex-direction: column;
         `}
       >
-        <InputEmail placeholder="ایمیل" />
-        <InputPassword placeholder="رمز عبور" />
+        <Formcontainer>
+          <InputEmail placeholder="ایمیل" />
+        </Formcontainer>
+        <Formcontainer>
+          <InputPassword placeholder="رمز عبور" />
+        </Formcontainer>
         <Button type="submit">ارسال</Button>
       </form>
     </LayoutAuth>
