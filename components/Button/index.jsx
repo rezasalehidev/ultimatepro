@@ -1,9 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/css'
-import { useTheme } from '@emotion/react'
 
 function index({ type = 'button', children, variant }) {
-  const theme = useTheme()
   return (
     <button
       type={type}
